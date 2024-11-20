@@ -688,17 +688,26 @@ $btn-mb: 0.5rem;
   height: 100%;
   overflow-y: auto;
   width: $sidebar-width;
-  background: var(--sidebar-bg);
+
+  /* 기존 배경 속성 변경 */
+  background: var(--sidebar-bg); /* 기존 색상 */
+  background-image: url('/assets/img/sidebar-background.jpg'); /* 배경 이미지 */
+  background-size: cover; /* 배경 크기 */
+  background-position: center; /* 배경 위치 */
+  background-repeat: no-repeat; /* 반복 금지 */
+
   border-right: 1px solid var(--sidebar-border-color);
 
-  /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  /* 스크롤바 숨기기 - 기존 유지 */
+  -ms-overflow-style: none; /* IE와 Edge */
   scrollbar-width: none; /* Firefox */
-
-  /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
-    display: none;
+    display: none; /* Chrome, Safari 등 */
   }
+}
+
+
+
 
   %sidebar-link-hover {
     &:hover {
