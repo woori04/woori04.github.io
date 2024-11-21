@@ -679,6 +679,26 @@ $sidebar-display: 'sidebar-display';
 $btn-border-width: 3px;
 $btn-mb: 0.5rem;
 
+
+
+
+.sidebar .menu-item a {
+  color: #ff5733; /* 원하는 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+/* 메뉴 항목에 마우스를 올렸을 때 색상 변경 */
+.sidebar .menu-item a:hover {
+  color: #33a1ff; /* 원하는 호버 색상 */
+  text-decoration: underline; /* 강조 효과 */
+}
+
+
+
+
+
+
+
 #sidebar {
   @include pl-pr(0);
 
