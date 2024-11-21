@@ -754,6 +754,11 @@ $btn-mb: 0.5rem;
     margin-bottom: 0.5rem;
     width: fit-content;
     color: #FFC0CB;/*var(--site-title-color);*/
+    text-shadow: 
+    -1px -1px 0px #000, /* 왼쪽 위 */
+     1px -1px 0px #000, /* 오른쪽 위 */
+    -1px  1px 0px #000, /* 왼쪽 아래 */
+     1px  1px 0px #000; /* 오른쪽 아래 */
   }
 
   .site-subtitle {
