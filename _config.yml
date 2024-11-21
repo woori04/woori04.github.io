@@ -224,6 +224,3 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-
-pin_posts:
-  - "2024-11-13-블로그.md"
