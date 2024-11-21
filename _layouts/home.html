@@ -62,6 +62,29 @@ refactor: true
   {% endfor %}
 </div>
 
+
+{% if site.pin_posts %}
+  <section id="pinned-posts">
+    <h2>📌 Pinned Posts</h2>
+    <ul>
+      {% for post in site.posts %}
+        {% if post.path contains site.pin_posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
+
+
+
+
 {% if paginator.total_pages > 1 %}
   {% include post-paginator.html %}
 {% endif %}
+
+
+
