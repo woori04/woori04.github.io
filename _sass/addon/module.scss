@@ -104,6 +104,26 @@
   user-select: none;
 }
 
+
+
+
+/* 메뉴 링크 스타일 */
+.nav-link {
+  color: #007bff; /* 기본 글자 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+  transition: color 0.3s ease; /* 부드러운 색상 전환 */
+}
+
+.nav-link:hover {
+  color: #ff5733; /* 커서를 올렸을 때 색상 */
+}
+
+
+
+
+
+
+
 %text-clip {
   display: -webkit-box;
   overflow: hidden;
