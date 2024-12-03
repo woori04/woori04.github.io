@@ -783,14 +783,14 @@ $btn-mb: 0.5rem;
 
   .site-subtitle {
     font-size: 95%;
-    color: var(--site-subtitle-color);
+    color: rgb(236, 178, 255); /* 또는 원하는 색상 코드, 예: #333333 */
     margin-top: 0.25rem;
     word-spacing: 1px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
+}
 
   ul {
     margin-bottom: 2rem;
