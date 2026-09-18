@@ -117,7 +117,7 @@ ShimCache에서 볼 수 있는 정보는 실행 파일 이름, 파일 경로, �
 
 아래 이미지는, Shimcache의 구조이다. 
 
-![shimcache_2](/assets/img/shimcache_2.png)
+<img src="https://woori04.github.io/assets/img/shimcache_2.png">
 
 Windows 시스템에서 애플리케이션이 실행되면 운영 체제는 shimcache에 실행을 기록한다. 애플리케이션 이름, 실행 파일 경로, 실행 시간, 레지스트리 변경, 새 파일 생성 등의 애플리케이션 실행으로 인해 시스템에 발생한 모든 수정 사항도 기록한다. 이 정보는 캐시 항목이라고 알려진 일련의 레코드로 shimcache에 저장되며, 각 캐시 항목에는 애플리케이션 이름, 실행 파일 경로 및 실행 시간이 포함된다. shimcache에는 실행 파일의 체크섬이 포함되어 있어 운영 체제가 파일의 무결성을 확인할 수 있다. ****
 
@@ -157,7 +157,7 @@ Windows XP에서 레지스트리 키
 
 완벽한듯 보이는 ShimCache 아티팩트에도 단점이 존재한다. 첫 번째로 정보는 메모리에 보관되고 시스템이 종료될 때만 레지스트리에 기록되는데, 이는 라이브 응답을 수행할 때 이 증거 소스를 가져오는 능력에 영향을 미친다. 이러한 제한 사항을 해결하기 위해 메모리에서 ShimCache를 읽는 Volatility 플러그인을 작성했다. Fred House, Claudiu Teodorescu, Andrew Davis등 이 플러그인들은 32비트 및 64비트 아키텍처에서 Windows XP SP2부터 Windows 2012 R2까지 지원하며, 2015년 Volatility 플러그인 콘테스트에서 우승했다.
 
-![shimcache_3](/assets/img/shimcache_3.png)
+<img src="https://woori04.github.io/assets/img/shimcache_3.png">
 
 ShimCacheMem 플러그인과 함께 Volatility를 분석된 시스템의 메모리에 사용하는 방법을 보여 준다. 메모리에서 직접 ShimCache를 보거나 시스템 종료 후 레지스트리를 쿼리하여 이 경우 Prefetch 아티팩트에서 발견된 증거를 확인할 수 있다. 그리고 Windows Server 시스템에서는 기본적으로 Prefetch가 비활성화되어 있기 때문에 ShimCache가 더 가치 있는 아티팩트가 될 수 있다.
 
@@ -173,10 +173,10 @@ FTK, HxD 둘 다 안보여서 레지스트리 편집기로 진행!
 
 HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache\AppCompatCache
 
-![shimcache_4](/assets/img/shimcache_4.png)
+<img src="https://woori04.github.io/assets/img/shimcache_4.png">
 
 의 경로로 ShimCache 를 분석하기 위해 들어가 보았지만 없어서 분석을 할 수 없었다…
 
-![shimcache_5](/assets/img/shimcache_5.png)
+<img src="https://woori04.github.io/assets/img/shimcache_5.png">
 
 정상적으로 분석이 가능한 것에서는 이렇게 값이 뜬다.
