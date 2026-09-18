@@ -36,6 +36,9 @@ AppCompatCache의 위치이다. (Shimcache)
 
 ![shimcache_1](/assets/img/shimcache_1.png)
 
+![테스트 이미지]({{ '/assets/img/shimcache_1.png' | relative_url }})
+
+
 ## 본론
 
 1. Amcache vs Shimcache
