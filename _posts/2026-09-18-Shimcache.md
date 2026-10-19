@@ -34,7 +34,7 @@ Shimcache는 윈도우 운영체제 아티팩트로, 모든 실행 프로그램 
 
 AppCompatCache의 위치이다. (Shimcache) 
 
-<img src="https://woori04.github.io/assets/img/shimcache_1.png" alt="test">
+<img src="https://woori04.github.io/assets/img/shimcache_1.png">
 
 
 ## 본론
